@@ -11,8 +11,6 @@ public class _02_FindDuplicate {
    * 否则就交换这两个元素，这个过程相当于排序。举个例子，通过交换将2放入numbers[2]。
 
    * @param num 待查找的数组
-   * @param length 数组的长度，其实就是numbers.length
-   * @param duplicate 用于保存重复数字，第一个被找到的重复数字存放在duplication[0]中
    * @return 如果在数组中有重复元素
    */
   public static int duplication(int[] num) {
