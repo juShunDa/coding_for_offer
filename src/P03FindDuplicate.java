@@ -4,7 +4,7 @@
  * @author juideal
  * @date 2016/10/31
  */
-public class P02FindDuplicate {
+public class P03FindDuplicate {
   /**
    * 推荐的做法，通过交换元素，将值i保存到numbers[i]
    * 在numbers[i]不和i相等时，如果numbers[i]和numbers[numbers[i]]相等就说明重复元素；
