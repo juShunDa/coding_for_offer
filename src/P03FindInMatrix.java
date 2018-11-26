@@ -4,7 +4,7 @@
  * @author juideal
  * @date 2018/11/26
  */
-public class P03_FindInMatrix {
+public class P03FindInMatrix {
   public static boolean findInMatrix(int[][] matrix, int target) {
     int rows = matrix.length;
     int columns = matrix[0].length;
