@@ -45,9 +45,34 @@ public class P05ReplaceSpace {
     System.out.println(newArray);
   }
 
+  public static String replaceSpaceTwo(StringBuffer str) {
+    int indexOfOrigin = str.length() - 1;
+    for (int i = 0; i <= indexOfOrigin; i++) {
+      if (str.charAt(i) == ' ') {
+        str.append("  ");
+      }
+    }
+    int indexOfNew = str.length() - 1;
+    while (indexOfOrigin >= 0 && indexOfNew > indexOfOrigin) {
+      char c = str.charAt(indexOfOrigin--);
+      if (c == ' ') {
+        str.setCharAt(indexOfNew--, '0');
+        str.setCharAt(indexOfNew--, '2');
+        str.setCharAt(indexOfNew--, '%');
+      } else {
+        str.setCharAt(indexOfNew--, c);
+      }
+    }
+    return str.toString();
+  }
+
+
   public static void main(String[] args) {
-    char[] preArray = "we are happy.".toCharArray();
+    char[] preArray = " we are happy.".toCharArray();
     System.out.println(preArray);
     replaceSpace(preArray, 200);
+    StringBuffer str = new StringBuffer("we are happy.");
+    System.out.println(str);
+    System.out.println(replaceSpaceTwo(str));
   }
 }
