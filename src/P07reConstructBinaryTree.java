@@ -1,6 +1,7 @@
+import dependentclass.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
-import dependentClass.TreeNode;
+
 
 
 
@@ -23,7 +24,7 @@ public class P07reConstructBinaryTree {
     if (startPre > endPre || startIn > endIn) {
       return null;
     }
-    TreeNode root = new TreeNode(pre[startPre]);
+    TreeNode root = new TreeNode<>(pre[startPre]);
     for (int i = startIn; i <= endIn; i++) {
       if (in[i] == pre[startPre]) {
         // startPre + i - startIn
@@ -52,7 +53,7 @@ public class P07reConstructBinaryTree {
     if (preL > preR) {
       return null;
     }
-    TreeNode root = new TreeNode(pre[preL]);
+    TreeNode root = new TreeNode<>(pre[preL]);
     int inIndex = indexForInOrders.get(root.val);
     int leftTreeSize = inIndex - inL;
     root.left = reConstructBinaryTreeTwo(pre, preL + 1, preL + leftTreeSize, inL);

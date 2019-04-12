@@ -1,6 +1,5 @@
-import dependentClass.ListNode;
+import dependentclass.ListNode;
 import java.util.ArrayList;
-import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * @program: coding_for_offer
