@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
-import test.TreeNode;
+import dependentClass.TreeNode;
 
 
 
