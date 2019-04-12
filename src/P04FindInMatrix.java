@@ -13,7 +13,7 @@ public class P04FindInMatrix {
     }
     while (row <= rows - 1 && column >= 0) {
       if (matrix[row][column] == target) {
-//          return true;
+        /* return true; */
         System.out.println("target is in " + row + "," + column);
         System.out.printf("target is in %d, %d \n", row, column);
         return true;
