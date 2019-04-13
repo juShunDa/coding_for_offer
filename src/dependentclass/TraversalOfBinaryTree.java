@@ -85,10 +85,8 @@ public class TraversalOfBinaryTree {
     TreeNode<Integer> cur = node;
     TreeNode<Integer> prevVisted = null;
     List<Integer> list = new LinkedList<>();
+    // || 与 有一个为真就为真
     while(cur != null || !stack.isEmpty()) {
-      /**
-       *
-       */
       if (cur != null) {
         stack.push(cur);
         cur = cur.left;
@@ -107,13 +105,7 @@ public class TraversalOfBinaryTree {
     return list;
   }
 
-
-
-
-
-
-
-
+  // 层次遍历
   public static List<Integer> levelorder(TreeNode<Integer> node) {
     Queue<TreeNode<Integer>> queue = new LinkedList<>();
     List<Integer> list = new LinkedList<>();
