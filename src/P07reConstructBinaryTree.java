@@ -30,7 +30,7 @@ public class P07reConstructBinaryTree {
         // startPre + i - startIn
         root.left = constructCore(pre, startPre + 1, startPre + i - startIn, in, startIn, i - 1);
         // startPre + i - startIn + 1
-        root.right = constructCore(pre, i - startIn + startPre + 1, endPre, in, i + 1, endIn);
+        root.setRight(constructCore(pre, i - startIn + startPre + 1, endPre, in, i + 1, endIn));
         break;
       }
     }
@@ -57,7 +57,7 @@ public class P07reConstructBinaryTree {
     int inIndex = indexForInOrders.get(root.val);
     int leftTreeSize = inIndex - inL;
     root.left = reConstructBinaryTreeTwo(pre, preL + 1, preL + leftTreeSize, inL);
-    root.right = reConstructBinaryTreeTwo(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1);
+    root.setRight(reConstructBinaryTreeTwo(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1));
     return root;
   }
 

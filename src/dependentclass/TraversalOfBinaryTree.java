@@ -14,7 +14,7 @@ public class TraversalOfBinaryTree {
     }
     list.add(node.val);
     list.addAll(preorderRecursively(node.left));
-    list.addAll(preorderRecursively(node.right));
+    list.addAll(preorderRecursively(node.getRight()));
     return list;
   }
 
@@ -25,7 +25,7 @@ public class TraversalOfBinaryTree {
     }
     list.addAll(inorderRecursively(node.left));
     list.add(node.val);
-    list.addAll(inorderRecursively(node.right));
+    list.addAll(inorderRecursively(node.getRight()));
     return list;
   }
 
@@ -36,7 +36,7 @@ public class TraversalOfBinaryTree {
       return list;
     }
     list.addAll(postorderRecursively(node.left));
-    list.addAll(postorderRecursively(node.right));
+    list.addAll(postorderRecursively(node.getRight()));
     list.add(node.val);
     return list;
   }
@@ -55,7 +55,7 @@ public class TraversalOfBinaryTree {
         stack.push(cur);
         cur = cur.left;
       } else {
-        cur = stack.pop().right;
+        cur = stack.pop().getRight();
       }
     }
     return list;
@@ -71,7 +71,7 @@ public class TraversalOfBinaryTree {
         cur = cur.left;
       } else {
         list.add(stack.peek().val);
-        cur = stack.pop().right;
+        cur = stack.pop().getRight();
       }
     }
     return list;
@@ -86,11 +86,14 @@ public class TraversalOfBinaryTree {
     TreeNode<Integer> prevVisted = null;
     List<Integer> list = new LinkedList<>();
     while(cur != null || !stack.isEmpty()) {
+      /**
+       *
+       */
       if (cur != null) {
         stack.push(cur);
         cur = cur.left;
       } else {
-        cur = stack.peek().right;
+        cur = stack.peek().getRight();
         if (cur != null && cur != prevVisted) {
           stack.push(cur);
           cur = cur.left;
@@ -126,8 +129,8 @@ public class TraversalOfBinaryTree {
       if (temp.left != null) {
         queue.offer(temp.left);
       }
-      if (temp.right != null) {
-      queue.offer(temp.right);
+      if (temp.getRight() != null) {
+      queue.offer(temp.getRight());
       }
     }
     return list;
