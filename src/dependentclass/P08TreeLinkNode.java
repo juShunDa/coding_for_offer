@@ -1,4 +1,4 @@
-package dependentClass;
+package dependentclass;
 
 /**
  * @program: coding_for_offer

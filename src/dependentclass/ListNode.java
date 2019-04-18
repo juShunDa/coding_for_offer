@@ -1,4 +1,4 @@
-package dependentClass;
+package dependentclass;
 
 public class ListNode {
   private int data;
