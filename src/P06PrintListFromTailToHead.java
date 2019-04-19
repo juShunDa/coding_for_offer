@@ -77,5 +77,3 @@ public class P06PrintListFromTailToHead {
     p.printListFromTailToHeadTwo(headNode);
   }
 }
-
-

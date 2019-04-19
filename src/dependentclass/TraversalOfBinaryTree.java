@@ -7,7 +7,8 @@ import java.util.*;
  */
 public class TraversalOfBinaryTree {
   //前序遍历递归版
-  public static List<Integer> preorderRecursively(TreeNode<Integer> node) {
+  @SuppressWarnings("AlibabaCommentsMustBeJavadocFormat")
+  private static List<Integer> preorderRecursively (TreeNode<Integer> node) {
     List<Integer> list = new ArrayList<>();
     if (node == null) {
       return list;
@@ -18,7 +19,7 @@ public class TraversalOfBinaryTree {
     return list;
   }
 
-  public static List<Integer> inorderRecursively(TreeNode<Integer> node) {
+  private static List<Integer> inorderRecursively (TreeNode<Integer> node) {
     List<Integer> list = new ArrayList<>();
     if (node == null) {
       return list;
@@ -29,8 +30,13 @@ public class TraversalOfBinaryTree {
     return list;
   }
 
-  //后序遍历递归版
-  public static List<Integer> postorderRecursively(TreeNode<Integer> node) {
+  /**
+   * 后序遍历递归版
+   *
+   * @param node
+   * @return
+   */
+  private static List<Integer> postorderRecursively (TreeNode<Integer> node) {
     List<Integer> list = new ArrayList<>();
     if (node == null) {
       return list;
@@ -41,8 +47,13 @@ public class TraversalOfBinaryTree {
     return list;
   }
 
-  //前序遍历非递归版
-  public static List<Integer> preorderIteratively(TreeNode<Integer> node) {
+  /**
+   * 前序遍历非递归版
+   *
+   * @param node
+   * @return
+   */
+  private static List<Integer> preorderIteratively (TreeNode<Integer> node) {
     Stack<TreeNode<Integer>> stack = new Stack<>();
     TreeNode<Integer> cur = node;
     List<Integer> list = new LinkedList<>();
@@ -109,7 +120,7 @@ public class TraversalOfBinaryTree {
   public static List<Integer> levelorder(TreeNode<Integer> node) {
     Queue<TreeNode<Integer>> queue = new LinkedList<>();
     List<Integer> list = new LinkedList<>();
-    TreeNode<Integer> temp = null;
+    TreeNode<Integer> temp;
     if (node == null) {
       return list;
     }
