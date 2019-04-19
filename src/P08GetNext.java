@@ -29,7 +29,7 @@ public class P08GetNext {
       }
       return pNode;
     }
-    // 节点不是根节点。如果该节点是其父节点的左孩子，则返回父节点；否则继续向上遍历其父节点的父节点，重复之前的判断，返回结果。
+    // 节点不是根节点。如果该节点是其父节点的左孩子，则返回父节点  ；否则继续向上遍历其父节点的父节点，重复之前的判断，返回结果。
     while (pNode.next != null) {
       TreeLinkNode parent = pNode.next;
       if (parent.left == pNode) {
