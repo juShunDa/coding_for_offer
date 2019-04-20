@@ -1,7 +1,7 @@
 /**
  * @author juideal
  */
-public class P11RectCover {
+public class P10RectCover {
   /**
    * target = n 分为两步考虑：
    * 第一次摆放一块 2*1 的小矩阵，则摆放方法总共为f(target - 1)
@@ -26,7 +26,7 @@ public class P11RectCover {
   }
 
   public static void main (String[] args) {
-    P11RectCover test = new P11RectCover();
+    P10RectCover test = new P10RectCover();
     System.out.println(test.rectCover(3));
   }
 

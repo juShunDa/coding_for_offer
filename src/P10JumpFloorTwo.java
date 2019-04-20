@@ -10,7 +10,7 @@ import static java.lang.Math.pow;
  * @author: Mr.Ju
  * @create: 2019-04-19 22:44
  **/
-public class P13JumpFloorTwo {
+public class P10JumpFloorTwo {
   /**
    * @Description: 跳上 n-1 级台阶，可以从 n-2 级跳 1 级上去，也可以从 n-3 级跳 2 级上去...，那么
    * f(n-1) = f(n-2) + f(n-3) + ... + f(0)

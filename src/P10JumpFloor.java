@@ -5,7 +5,7 @@
  * @author: Mr.Ju
  * @create: 2019-04-19 22:36
  **/
-public class P12JumpFloor {
+public class P10JumpFloor {
   public int jumpFloor (int n) {
     /**
      * @Description:
