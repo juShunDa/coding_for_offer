@@ -10,13 +10,14 @@ package sort;
  * @create: 2019-04-22 16:25
  **/
 public abstract class AbstractSort<T extends Comparable<Integer>> {
+
   public abstract void sort (int[] nums);
 
-  protected boolean less (Integer v, Integer w) {
+  boolean less (Integer v, Integer w) {
     return v.compareTo(w) < 0;
   }
 
-  protected void swap (int[] a, int i, int j) {
+  void swap (int[] a, int i, int j) {
     int t = a[i];
     a[i] = a[j];
     a[j] = t;
