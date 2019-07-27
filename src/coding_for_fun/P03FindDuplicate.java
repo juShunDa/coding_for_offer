@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 /**
  * FindDuplicate
  *
@@ -9,7 +11,6 @@ public class P03FindDuplicate {
    * 推荐的做法，通过交换元素，将值i保存到numbers[i]
    * 在numbers[i]不和i相等时，如果numbers[i]和numbers[numbers[i]]相等就说明重复元素；
    * 否则就交换这两个元素，这个过程相当于排序。举个例子，通过交换将2放入numbers[2]。
-
    * @param num 待查找的数组
    * @return 如果在数组中有重复元素
    */

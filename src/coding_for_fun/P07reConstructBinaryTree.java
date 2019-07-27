@@ -1,8 +1,8 @@
+package coding_for_fun;
+
 import dependentclass.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
-
-
 
 
 /**

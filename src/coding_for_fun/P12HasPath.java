@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 /**
  * @program: coding_for_offer
  * @description: 请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。

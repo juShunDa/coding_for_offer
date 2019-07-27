@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 /**
  * @program: coding_for_offer
  * @description: 二叉树的下一个节点

@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 /**
  * @program: coding_for_offer
  * @description: 跳台阶, 递归, 斐波那契数列
