@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;

@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 /**
  * @author juideal
  */

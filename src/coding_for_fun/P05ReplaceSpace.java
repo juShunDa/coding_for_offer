@@ -1,5 +1,7 @@
+package coding_for_fun;
+
 public class P05ReplaceSpace {
-  public static void replaceSpace(char[] charArray,int length) {
+  public static void replaceSpace (char[] charArray, int length) {
     if (charArray == null || length <= 0) {
       return;
     }

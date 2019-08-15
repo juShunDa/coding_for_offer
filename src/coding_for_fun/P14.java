@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 /**
  * @program: coding_for_offer
  * @description: 把一根绳子剪成多段，并且使得每段的长度乘积最大

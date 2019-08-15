@@ -1,3 +1,5 @@
+package coding_for_fun;
+
 import java.util.Arrays;
 
 import static java.lang.Math.pow;

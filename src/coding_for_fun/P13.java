@@ -1,3 +1,4 @@
+package coding_for_fun;
 
 /**
  * @program: coding_for_offer
