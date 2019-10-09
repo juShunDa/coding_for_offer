@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class MainOne {
 
   public static int inversePairs (int[] data) {
@@ -59,19 +62,13 @@ public class MainOne {
   }
 
   public static void main (String[] args) {
-    int[] data = {1, 2, 3, 4, 7, 6, 5};
-    System.out.println(inversePairs(data)); // 3
-    int[] data2 = {6, 5, 4, 3, 2, 1};
-    System.out.println(inversePairs(data2)); //  15
-    int[] data3 = {1, 2, 3, 4, 5, 6};
-    System.out.println(inversePairs(data3)); // 0
-    int[] data4 = {1};
-    System.out.println(inversePairs(data4)); // 0
-    int[] data5 = {1, 2};
-    System.out.println(inversePairs(data5)); // 0
-    int[] data6 = {2, 1};
-    System.out.println(inversePairs(data6)); // 1
-    int[] data7 = {1, 2, 1, 2, 1};
-    System.out.println(inversePairs(data7)); // 3
+    Scanner sc = new Scanner(System.in);
+    int m = sc.nextInt();
+    int[] numList = new int[m];
+    for (int i = 0; i < m; i++) {
+      numList[i] = sc.nextInt();
+    }
+
+    System.out.println(inversePairs(numList));
   }
 }
